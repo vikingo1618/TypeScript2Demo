@@ -1,25 +1,16 @@
 class Car {
-
-    private _engine: string;
-
-    constructor(engine: string){
+    constructor(engine) {
         this._engine = engine;
     }
-
-    starEngine(){
+    starEngine() {
         alert(`Start engine ${this._engine}`);
     }
-
-    stopEngine(){
-        //Interpolacion de cadenas
-        
+    stopEngine() {
         alert(`Stop engine ${this._engine}`);
     }
 }
-
-window.onload = function(){
-    
+window.onload = function () {
     var car = new Car('V8');
     car.starEngine();
     car.stopEngine();
-}
+};
